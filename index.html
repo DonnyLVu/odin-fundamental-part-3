@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript fundamentals part 1</title>
+  </head>
+  <body>
+    <h1>JavaScript basic function test/ review</h1>
+    <script>
+      // Declare two variables: admin and name.
+      // Assign the value "John" to name.
+      // Copy the value from name to admin.
+      // Show the value of admin using alert (must output “John”).
+
+      // let name ,admin;
+      // name = "John";
+      // admin = name;
+      // alert(admin);
+
+      // Create a variable with the name of our planet. How would you name such a variable?
+      // Create a variable to store the name of a current visitor to a website. How would you name that variable?
+
+      // let ourPlanetName = "Earth";
+      // let currentVisitorName = "Bob";
+
+      // let text = "         123456789";
+      // let part = text.trim();
+      function add7(number) {
+        let newNumber = number + 7;
+        return newNumber;
+      }
+      console.log("function add7", add7(3));
+
+      function multiply(a, b) {
+        let product = a * b;
+        return product;
+      }
+      console.log("function mutiply", multiply(2, 3));
+
+      function sliceTest(string) {
+        let testString = string.slice(1);
+        return testString;
+      }
+      console.log(sliceTest("abcdefg"));
+
+      function capitalize(string) {
+        let lowerCaseString = string.toLowerCase();
+        let upperCaseFirstLetter =
+          lowerCaseString.charAt(0).toUpperCase() + lowerCaseString.slice(1);
+        return upperCaseFirstLetter;
+      }
+      console.log(capitalize("this is soemthing"));
+
+      function lastLetter(string) {
+        let lastLetterOfString = string.slice(-1);
+        return lastLetterOfString;
+      }
+      console.log(lastLetter("abcd"));
+    </script>
+  </body>
+</html>
